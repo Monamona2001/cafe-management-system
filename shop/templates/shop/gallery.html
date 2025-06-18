@@ -1,0 +1,39 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %}Gallery Page{% endblock %}
+
+{% block head %}
+<style>
+
+</style>
+{% endblock %}
+
+{% block body %}
+ {% load static %}
+<main>
+    <section class="gallery-section" id="gallery">
+        <div class="section-content">
+            <ul class="gallery-list">
+                <li class="gallery-item">
+                    <img src="{% static 'shop/assets/img/slide/gallery.jpg' %}" alt="Gallery Image" class="gallery-image" />
+                </li>
+                <li class="gallery-item">
+                    <img src="{% static 'shop/assets/img/slide/gallery1.jpg' %}" alt="Gallery Image" class="gallery-image" />
+                </li>
+                <li class="gallery-item">
+                    <img src="{% static 'shop/assets/img/slide/gallery2.jpg' %}" alt="Gallery Image" class="gallery-image" />
+                </li>
+                <li class="gallery-item">
+                    <img src="{% static 'shop/assets/img/slide/gallery3.jpg' %}" alt="Gallery Image" class="gallery-image" />
+                </li>
+                <li class="gallery-item">
+                    <img src="{% static 'shop/assets/img/slide/gallery4.jpg' %}" alt="Gallery Image" class="gallery-image" />
+                </li>
+                <li class="gallery-item">
+                    <img src="{% static 'shop/assets/img/slide/gallery5.jpg' %}" alt="Gallery Image" class="gallery-image" />
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+{% endblock %}
